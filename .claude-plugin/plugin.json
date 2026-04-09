@@ -1,0 +1,11 @@
+{
+  "name": "ai-video-prompt",
+  "description": "Six-dimension framework for writing stable, controllable AI video prompts (Sora, Kling, Veo, Runway, Pika, Hailuo, Wan, Hunyuan, Luma, etc.)",
+  "version": "1.0.0",
+  "author": {
+    "name": "sunfjun"
+  },
+  "homepage": "https://github.com/sunfjun/claude-skill-ai-video-prompt",
+  "repository": "https://github.com/sunfjun/claude-skill-ai-video-prompt",
+  "license": "MIT"
+}

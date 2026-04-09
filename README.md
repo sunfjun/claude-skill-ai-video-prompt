@@ -17,18 +17,33 @@ This skill guides Claude to build each prompt along six dimensions, in order:
 5. **Lighting & color** — directional light, contrast, tone
 6. **Timeline** — second-by-second state evolution
 
-Full framework lives in [`SKILL.md`](./SKILL.md).
+Full framework lives in [`skills/ai-video-prompt/SKILL.md`](./skills/ai-video-prompt/SKILL.md).
 
 ## Installation
 
-Clone this repo into your Claude Code skills directory:
+### Option A — Install as a Claude Code plugin (recommended)
 
-```bash
-git clone https://github.com/sunfjun/claude-skill-ai-video-prompt.git \
-  ~/.claude/skills/ai-video-prompt
+Inside Claude Code, run:
+
+```
+/plugin marketplace add sunfjun/claude-skill-ai-video-prompt
+/plugin install ai-video-prompt@claude-skill-ai-video-prompt
 ```
 
-Restart Claude Code (or start a new session). The skill will auto-activate when relevant.
+That's it. The skill auto-activates when you ask Claude something relevant.
+
+### Option B — Manual install as a loose skill
+
+If you prefer not to use the plugin system, clone just the skill file:
+
+```bash
+git clone https://github.com/sunfjun/claude-skill-ai-video-prompt.git /tmp/cvp && \
+  mkdir -p ~/.claude/skills/ai-video-prompt && \
+  cp /tmp/cvp/skills/ai-video-prompt/SKILL.md ~/.claude/skills/ai-video-prompt/ && \
+  rm -rf /tmp/cvp
+```
+
+Then restart Claude Code.
 
 ## Usage
 
